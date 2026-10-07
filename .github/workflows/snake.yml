@@ -1,0 +1,38 @@
+name: Update contribution snake
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate blue contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#60a5fa&color_dots=#101b2b,#173b6c,#215fc2,#3b82f6,#93c5fd
+            dist/github-snake-light.svg?palette=github-light&color_snake=#2563eb&color_dots=#e8eef7,#bfdbfe,#60a5fa,#3b82f6,#1d4ed8
+      - name: Publish animation
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Update blue contribution snake"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
