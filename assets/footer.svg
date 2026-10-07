@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="86" viewBox="0 0 1200 86" role="img" aria-labelledby="title">
+  <title id="title">Computer Science at TMU</title>
+  <rect width="1200" height="86" rx="10" fill="#060B13"/>
+  <path d="M0 1H1200" stroke="#2F6DD1"/>
+  <rect x="34" y="37" width="8" height="8" fill="#438BFF"/>
+  <text x="59" y="48" fill="#91B8F4" font-family="Consolas, monospace" font-size="17" letter-spacing="2">COMPUTER SCIENCE AT TMU</text>
+  <text x="1165" y="48" text-anchor="end" fill="#6B829F" font-family="Consolas, monospace" font-size="14">@Keerit101</text>
+</svg>
