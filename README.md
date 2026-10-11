@@ -54,6 +54,10 @@ A containerised test application and repeatable test suite for authentication, o
 
 <table>
   <tr>
+    <td width="31%"><a href="https://github.com/Keerit101/prompt-injection-lab"><b>Prompt Injection Lab ↗</b></a></td>
+    <td>A local LLM chatbot guarding a fake secret, attacked 125 times per setup and defended three ways. With no defenses 16.8% of attacks leaked the secret, and 56% when the attack was hidden in a document; the report also covers false positives and what the results don't prove.<br /><sub>Python · Ollama · LLM security · prompt injection</sub></td>
+  </tr>
+  <tr>
     <td width="31%"><a href="https://github.com/Keerit101/CodeAlpha_SecureCodingReview"><b>Python Secure Coding Review ↗</b></a></td>
     <td>An insecure demo, a hardened rewrite, and a documented review of password handling, deserialization, and subprocess risks.<br /><sub>Python · Bandit · Code review</sub></td>
   </tr>
