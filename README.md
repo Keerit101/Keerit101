@@ -103,10 +103,14 @@ A containerised test application and repeatable test suite for authentication, o
 
 | Area | Tools & techniques |
 | :--- | :--- |
-| Python development | Python · JSON · input validation · subprocess handling |
+| Python development | Python · JSON · input validation · subprocess handling · Flask APIs |
 | Secure coding | Bandit · manual code review · password hashing · safer deserialization |
 | Web assessment | OWASP ZAP · Nmap · Browser DevTools · HTTP header inspection |
 | API analysis | REST · response inspection · data minimisation · authentication & authorisation review |
+| LLM security | Ollama · local LLMs (llama3.2) · prompt injection attacks & defenses · garak vulnerability scanning · attack-success-rate measurement |
+| Network traffic analysis | Wireshark · tshark · Scapy · Nmap SYN scans · pcap analysis · detection rules for port scans, DNS tunneling & beaconing |
+| Testing & evidence | unittest · held-out & false-positive testing · independent cross-checks · matplotlib charts · reproducible results |
+| Lab environment | VirtualBox · Kali Linux · isolated host-only networking |
 | Security communication | Evidence collection · risk classification · remediation reports · phishing awareness |
 | Portfolio frontend | JavaScript · HTML · CSS · Three.js · responsive interfaces |
 | Build & publishing | Vite · npm · Vercel · custom domains · Git · GitHub |
@@ -118,8 +122,8 @@ A containerised test application and repeatable test suite for authentication, o
 | :--- | :--- |
 | Backend & data | FastAPI · Pydantic · PostgreSQL · SQL |
 | Testing & quality | pytest · HTTPX · integration tests · security regression tests |
-| Detection & investigation | Wazuh · Sigma · Wireshark · log analysis |
-| AI-assisted workflows | Ollama · local LLMs · structured outputs · retrieval · evaluation datasets |
+| Detection & investigation | Wazuh · Sigma · log analysis |
+| AI-assisted workflows | structured outputs · retrieval · evaluation datasets |
 | Delivery & security checks | Docker · Linux · Bash · Semgrep · Trivy · CI pipelines |
 
 <img src="assets/divider.svg" width="100%" alt="" />
