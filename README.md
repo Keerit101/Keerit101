@@ -58,6 +58,10 @@ A containerised test application and repeatable test suite for authentication, o
     <td>A local LLM chatbot guarding a fake secret, attacked 125 times per setup and defended three ways. With no defenses 16.8% of attacks leaked the secret, and 56% when the attack was hidden in a document; the report also covers false positives and what the results don't prove.<br /><sub>Python · Ollama · LLM security · prompt injection</sub></td>
   </tr>
   <tr>
+    <td><a href="https://github.com/Keerit101/network-traffic-analysis"><b>Network Traffic Analysis ↗</b></a></td>
+    <td>Three detectors for port scans, DNS tunneling and beaconing, tested on synthetic captures and on real traffic from my own machine and a Kali VM, then cross-checked against Wireshark’s own tool. One beacon with irregular timing was missed, and the report explains why no threshold fixes it.<br /><sub>Python · Scapy · Wireshark · Nmap · Kali Linux</sub></td>
+  </tr>
+  <tr>
     <td width="31%"><a href="https://github.com/Keerit101/CodeAlpha_SecureCodingReview"><b>Python Secure Coding Review ↗</b></a></td>
     <td>An insecure demo, a hardened rewrite, and a documented review of password handling, deserialization, and subprocess risks.<br /><sub>Python · Bandit · Code review</sub></td>
   </tr>
